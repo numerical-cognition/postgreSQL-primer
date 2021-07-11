@@ -110,19 +110,22 @@ Remove the older cluster
 $ sudo pg_dropcluster 12 main
 ```
 
-## User
 
-
-A role is a user in a database world. Roles are separate from operating system users and global across a cluster. Users without password can connect to the cluster only locally (i.e. through socket).
-
-## Start `psql`
+# Start `psql`
 
 ```bash
 $ sudo -u postgres psql
 \password for sudo
 ```
 
-After you enter `psql` for default user (which is called postgres), you can add more users/roles. 
+After you enter `psql` for default user (which is called postgres), you can add more users/roles.
+
+
+## User
+
+
+A role is a user in a database world. Roles are separate from operating system users and global across a cluster. Users without password can connect to the cluster only locally (i.e. through socket).
+
 
 ## Create role  
 
